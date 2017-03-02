@@ -6,6 +6,11 @@ body{
 .container{
 	width: 100%;
 }
+
+.clear{
+	clear: both;
+}
+
 .brand{
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
