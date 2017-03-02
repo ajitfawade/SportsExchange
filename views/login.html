@@ -1,3 +1,4 @@
+<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="../styles/style.css">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <div class="container">
@@ -7,20 +8,20 @@
 		</div>
 		<div class="login-body">
 			<form name="loginForm">
-				<input type="text" class="form-control" name="userEmail" placeholder="Email">
-				<input type="password" class="form-control" name="userPassword" placeholder="Password">
+				<input type="text" class="form-control" name="userEmail" placeholder="Email" required>
+				<input type="password" class="form-control" name="userPassword" placeholder="Password" required>
 				<button class="btn form-control">
 					<span class="btn-text">Log in</span>
 					<span class="btn-icon">| <i class="fa fa-arrow-right"></i></span>
 				</button>
 			</form>
 			<div class="socialButtons">
-				<button class="btn-facebook">Facebook</button>
-				<button class="btn-google">Google+</button>
+				<button class="btn-facebook form-control">Facebook</button>
+				<button class="btn-google form-control">Google+</button>
 			</div>
 			<div class="form-text">
-				<span class="forgot-password-text">Forgot Password?</span>
-				<span class="sign-up-text">Sign Up Now</span>
+				<span class="forgot-password-text"><a class="link-text" href="recoverpassword.html">Forgot Password?</a></span>
+				<span class="sign-up-text"><a class="link-text" href="signup.html">Sign Up Now</a></span>
 			</div>
 		</div>
 	</div>

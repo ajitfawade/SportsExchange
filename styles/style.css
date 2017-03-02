@@ -4,15 +4,13 @@ body{
 	font-family: Lato; /*not getting applied on whole page*/
 }
 .container{
-	display: inline-block;
-	position: relative;
-	width: 100%;	
+	width: 100%;
 }
 .brand{
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 	background-color:  #17a2d4;
-	width: 500px;
+	width: 100%;
 	height: 100px;
 	text-align: center;
 	display: table;
@@ -29,7 +27,7 @@ body{
 }
 
 .login-wrapper{
-	margin: 80px auto 80px auto;
+	margin: 50px auto 50px auto;
 	border-radius: 3px;
 	background-color:  #ffffff;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
@@ -39,7 +37,7 @@ body{
 }
 
 .login-body{
-padding: 20px;
+	padding: 20px;
 }
 .form-control{
 	border-radius: 3px;
@@ -59,6 +57,7 @@ padding: 20px;
 	background-color:  #17a2d4;
 	width: 100%;
 	height: 60px;
+	cursor: pointer;
 }
 .btn-text{
 	float: left;
@@ -82,6 +81,7 @@ padding: 20px;
 	height: 60px;
 	display: inline-block;
 	color: #fff;
+	cursor: pointer;
 }
 .socialButtons .btn-google{
 	border-radius: 3px;
@@ -92,13 +92,23 @@ padding: 20px;
 	height: 60px;
 	display: inline-block;
 	color: #fff;
+	cursor: pointer;
+}
+
+.link-text{
+	text-decoration: none;
+	cursor: pointer;
+	color:  #000000;
+}
+.link-text:hover{
+	color: #0000EE;
 }
 
 .form-text{
-color:  #000000;
-font-size: 18px;
-font-weight: 400;
-padding: 20px 0 20px 0;
+	color:  #000000;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 20px 0 20px 0;
 }
 
 .form-text .forgot-password-text{
@@ -107,4 +117,11 @@ padding: 20px 0 20px 0;
 
 .form-text .sign-up-text{
 	float: right;
+}
+
+
+@media screen and (max-width: 980px){
+	.container{
+		width: 94%;
+	}
 }
