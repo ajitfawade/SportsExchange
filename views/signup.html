@@ -1,0 +1,50 @@
+<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../styles/style.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+	function changeColor() {
+		var radioButtons = document.getElementsByName("personType");
+		for (var i = radioButtons.length - 1; i >= 0; i--) {
+			if(radioButtons[i].checked){
+				radioButtons[i].parentElement.style.backgroundColor = "#17a2d4";
+			}else{
+				radioButtons[i].parentElement.style.backgroundColor = "#f6f6f6";
+			}
+		}
+	}
+</script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<div class="container">
+	<div class="wrapper">
+		<div class="panel-header signup-title">Sign up with Sports Exchange</div>
+		<div class="panel-body">
+			<form name="signupForm">
+				<input type="text" name="firstName" class="form-control" placeholder="First Name">
+				<input type="text" name="lastName" class="form-control" placeholder="Last Name">
+				<div>
+					<div class="rdbtn coachbtn">
+						<input type="radio" id="radio-button" name="personType" value="Coach" onclick="changeColor()">
+						<label class="radio-label" for="radio-button">Coach</label>
+					</div>
+					<div class="rdbtn roasterbtn">
+						<input type="radio" id="radio-button" name="personType" value="Roaster" onclick="changeColor()">
+						<label class="radio-label" for="radio-button">Roaster</label>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+				<input type="text" name="mobile" class="form-control" placeholder="Mobile">
+				<input type="text" name="email" class="form-control" placeholder="Email">
+				<input type="text" name="password" class="form-control" placeholder="Password">
+				<button class="btn form-control">
+					<span class="btn-text">Register</span>
+					<span class="btn-icon">| <i class="fa fa-arrow-right"></i></span>
+					<div class="clear"></div>
+				</button>
+			</form>
+		</div>
+	</div>
+	<div class="backLink">
+		<a href="login.html" class="link-text">BACK TO LOGIN</a>
+	</div>
+</div>
