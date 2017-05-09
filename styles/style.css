@@ -42,14 +42,18 @@ body{
 	color:  #f4f4f4;
 	font-size: 30px;
 	font-weight: 800;
-	/*display: table-cell;*/
-	vertical-align: middle;
+	display: flex;
 	word-spacing: 15px;
 }
 
 .brand-name .brand-name-text{
-	padding: 31px;
-	float: left;
+	/*padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 2%;
+	padding-bottom: 2%*/;
+	margin: 2% 15% 2% 16%;
+	justify-content: center;
+	align-items: center;
 }
 
 .wrapper{
@@ -63,7 +67,7 @@ body{
 }
 
 .panel-body{
-	padding-top: 20px;
+	padding: 20px;
 }
 .form-control{
 	border-radius: 3px;
@@ -187,8 +191,8 @@ input[type="radio"]:checked ~ div{
 	font-weight: 400;
 	text-align: center;
 	border-bottom: 1px solid #000000;
-	width: 117px;
-	height: -1px;	
+	width: 150px;
+	/*height: -1px;	*/
 }
 
 .btn-action{
@@ -211,12 +215,13 @@ input[type="radio"]:checked ~ div{
 	margin-right: 20px;
 	margin-top: 20px;
 	font-family: Lato;
+	text-transform: none;
 }
 
-.action-btn-text{
+.link-text{
 	font-family: Lato;
 	color:  #000000;
-	font-size: 24px;/* Approximation due to font substitution */
+	font-size: 18px;/* Approximation due to font substitution */
 	font-weight: 400;
 	text-align: center;
 }
